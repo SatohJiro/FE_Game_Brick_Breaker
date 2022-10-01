@@ -1,0 +1,100 @@
+.main_container {
+  position: absolute;
+  left: 100px;
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  background-image: url("../resource/spaceBg.jpg");
+}
+.main_container .menu {
+  color: white;
+}
+.main_container .menu .perform {
+  width: 200px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.main_container .menu .perform .title {
+  font-family: "Blaka", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+.main_container .menu .perform .score_container {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.main_container .menu .perform .level_container {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.main_container .menu .perform .ball_container {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.main_container .menu .perform .ball_container .ball {
+  margin: 8px 0 10px 10px;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+}
+.main_container .menu .guide {
+  margin-top: 60px;
+}
+.main_container .menu .guide .guide_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main_container .menu .guide .guide_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container .menu .guide .guide_content .level_select {
+  margin: 5px;
+  width: 130px;
+  border: 5em;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  font-size: 14px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+.main_container .menu .guide .guide_content .level_select .text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+}
+.main_container .menu .guide .guide_content .level_select:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+.main_container .menu .guide .guide_content .level_select:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+.main_container .menu .guide .guide_content .level_select:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+
+/*# sourceMappingURL=style.css.map */
